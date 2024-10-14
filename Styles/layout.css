@@ -1,0 +1,27 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  padding: 4rem; /*Como são 64px, significa que são 4x16px (16px = 1rem)*/
+
+  /*Usando CSS Nesting, mas importante consultar os navegadores compatíveis antes*/
+  & .main-container {
+    max-width: 33rem; /*Convertendo de 528px (divido por 16) */
+    margin-left: auto;
+  }
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4rem;
+
+  & .aside-containe {
+    max-width: 31rem; /*Convertendo 496 px*/
+  }
+}
