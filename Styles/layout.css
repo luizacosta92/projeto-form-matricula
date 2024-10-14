@@ -10,6 +10,17 @@ main {
   overflow: auto;
   padding: 4rem; /*Como são 64px, significa que são 4x16px (16px = 1rem)*/
 
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: 0.5 rem;
+    margin-bottom: 1.5rem;
+  }
+
+    & h1 {
+      font: 600 1.5rem/1.25 var(--font-family);
+      margin-bottom: .5rem;
+    }
   /*Usando CSS Nesting, mas importante consultar os navegadores compatíveis antes*/
   & .main-container {
     max-width: 33rem; /*Convertendo de 528px (divido por 16) */
@@ -23,5 +34,17 @@ aside {
 
   & .aside-containe {
     max-width: 31rem; /*Convertendo 496 px*/
+
+    & > img {
+      margin-top: 2rem;
+    }
+  }
+
+  & h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+
+    & span {
+      color: var(--text-highlight);
+    }
   }
 }
