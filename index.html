@@ -75,10 +75,39 @@
          
         </fieldset>
 
-        <fieldset id="endereço">
+        <fieldset id="address">
           <legend>Endereço residencial</legend>
-          <label>CEP</label>
-          <input type="CEP" name="" id=""> 
+
+          <div class="input-wrapper">
+          <label for="cep">CEP</label>
+          <input type="text" name="cep" id="cep"> 
+           </div>
+
+        <div class="flex">
+          <div class="input-wrapper flex-2">
+            <label for="street">Rua</label>
+            <input type="text" name="street" id="street" value="Avenida 7 de setembro" disabled> 
+          </div> 
+       
+
+          <div class="input-wrapper flex-1">
+            <label for="number">Número</label>
+            <input type="number" name="number" id="number"> 
+          </div> 
+        </div>
+
+        <div class="flex">
+          <div class="input-wrapper flex-2">
+            <label for="city">Cidade</label>
+            <input type="text" name="city" id="city" value="Salvador" disabled> 
+        
+        </div>
+
+          <div class="input-wrapper flex-1">
+            <label for="state">Estado</label>
+            <input type="text" name="state" id="state" value="BA" disabled> 
+          </div> 
+        </div>
         </fieldset>
       </form>
 
