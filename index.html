@@ -20,8 +20,61 @@
         </div>
         <h1>Formulário de matrícula</h1>
       <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-    </main>
+      
+      <form action="" method="post" enctype="multipart/form-data">
+        <fieldset class="child-info">
+          <legend>Informações da criança</legend>
 
+          <div class="input-wrapper">
+            <label for="fullname">Nome completo</label>
+            <input id="fullname"
+                  name="fullname"
+                  type="text"
+                  placeholder="Qual o nome da criança?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="birth"> Data de nascimento</label>
+            <input id="birth"
+              name="birth"
+              type="date"
+              lang="pt-BR">
+          </div>
+          
+          <div class="select-wrapper">
+            <label for="gender">Sexo</label>
+            <select id="gender" name="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  </select>
+          </div>
+
+          <div id="textarea-wrapper">
+            <label for="medical-info">Informações médicas</label>
+            <textarea
+            name="medical-info" id="medical-info"
+           cols="30" rows="10"
+            placeholder="Adicione informações sobre alergias, restrições alimentares, etc."
+            title="Insira pelo menos 10 caracteres"></textarea>  
+          </div>
+
+          <div class="file-wrapper">
+            <label for="birth-file">Certidão de nascimento</label>
+            <input type="file" id="birth-file" name="birth-file">
+            <img src="Assets/Icons/cloud-upload.svg" alt="imagem de nuvem">
+            <p>Clique aqui para <br>selecionar os arquivos</p>
+          </div>
+         
+        </fieldset>
+
+        <fieldset id="endereço">
+          <legend>Endereço residencial</legend>
+          <label>CEP</label>
+          <input type="CEP" name="" id=""> 
+        </fieldset>
+      </form>
+
+    </main>
     <aside>
       <div class="aside-container">
        <header> 
@@ -33,5 +86,6 @@
     </aside>
   </div>
   </div>
+
 </body>
 </html>
