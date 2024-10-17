@@ -52,4 +52,7 @@ label + .radio-wrapper {
       }
     }
     }
-}
+
+    .input-wrapper > label {
+      
+    }
