@@ -29,3 +29,8 @@ fieldset + fieldset {
   opacity: .5;
 }
 
+.actions-wrapper {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+}
