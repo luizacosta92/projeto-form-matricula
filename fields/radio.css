@@ -27,7 +27,7 @@ label + .radio-wrapper {
   }
 
   .radio-image {
-    background-image: url(/Assets/Icons/radio-default.svg);
+    background-image: url(../Assets/Icons/radio-default.svg);
       width: 1.5rem;
     height: 1.5rem;
     position: absolute;
@@ -39,7 +39,7 @@ label + .radio-wrapper {
     border: 1px solid var(--stroke-highlight);
 
     & .radio-image {
-      background-image: url(/Assets/Icons/radio-hover.svg);
+      background-image: url(../Assets/Icons/radio-hover.svg);
     }
   }
 
@@ -48,7 +48,7 @@ label + .radio-wrapper {
     
 
       & .radio-image {
-        background-image: url(/Assets/Icons/radio-checked.svg);
+        background-image: url(../Assets/Icons/radio-checked.svg);
       }
     }
     }
